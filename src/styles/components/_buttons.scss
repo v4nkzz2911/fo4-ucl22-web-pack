@@ -1,0 +1,91 @@
+.btn,
+.swal2-container .swal2-popup .swal2-styled.swal2-confirm,
+.swal2-container .swal2-popup .swal2-styled.swal2-cancel {
+  background: url(/images/btn.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  font-size: tovw(24);
+  text-transform: uppercase;
+  color: #02024d !important;
+  height: tovw(56);
+  line-height: tovw(56);
+  padding: 0 tovw(15);
+  outline: none !important;
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  min-width: tovw(191);
+  position: relative;
+  font-family: $bebas;
+  transition: transform 0.25s ease;
+  // font-style: italic;
+  @include min-screen(1200px) {
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+  &--white {
+    min-width: tovw(242);
+    height: tovw(55);
+    line-height: tovw(55);
+    color: #fff !important;
+    background: url(/images/btn-br-white.png) no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+  &--correct {
+    min-width: tovw(242);
+    height: tovw(55);
+    line-height: tovw(55);
+    color: #fff !important;
+    background: url(/images/btn-br-green.png) no-repeat !important;
+    background-size: 100% 100% !important;
+    span {
+      color: #5af7dc;
+    }
+  }
+  &--fail {
+    min-width: tovw(242);
+    height: tovw(55);
+    line-height: tovw(55);
+    color: #fff !important;
+    background: url(/images/btn-fail.png) no-repeat !important;
+    background-size: 100% 100% !important;
+    span {
+      color: #ff16ff;
+    }
+  }
+  &--match {
+    min-width: tovw(156);
+    height: tovw(50);
+    line-height: tovw(50);
+    font-family: $bb;
+    font-size: tovw(26);
+    background-image: none !important;
+  }
+  &--predict {
+    color: #00004b !important;
+    background-color: #ff16ff !important;
+  }
+  &--predicted{
+    color: #ff16ff !important;
+    background-color: #00004b !important;
+  }
+  &--ended {
+    background-color: #00004b !important;
+    color: #999999 !important;
+  }
+  &--predict-modal {
+    min-width: tovw(231);
+    height: tovw(50);
+    line-height: tovw(50);
+    background: url(/images/btn-predict-modal.png) no-repeat !important;
+    background-size: 100% 100% !important;
+    color: #00004b !important;
+    font-size: tovw(36) !important;
+  }
+}
+.swal2-container .swal2-popup .swal2-styled.swal2-cancel {
+  background: url(/images/btn-cancel.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  color: #fff !important;
+}

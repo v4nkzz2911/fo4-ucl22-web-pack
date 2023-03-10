@@ -1,0 +1,116 @@
+/// Variables
+/// @see https://www.smashingmagazine.com/2016/01/variables-in-css-architecture/
+
+/// Grid
+/// Using rem-units to scale for accessibility (based on the user's browser settings, default 1rem equals 16px)
+/// @see layout/grid
+/// grid class specified below ($breakpoints)
+
+$grid-max-width:  120rem;
+$grid-gutter:     1rem;
+$grid-columns:    12;
+$grid-show-outlines: false; //to show the grid's outlines
+
+/// Breakpoints - used by the grid and media query manager
+/// @type Map
+/// @prop {size}: [min-width] - breakpoint name and minimum width for media queries
+$breakpoints: (
+  'xs': 0,
+  'sm': 420px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1200px
+);
+
+@font-face {
+  font-family: 'BeatDownBB';
+  src: url('/fonts/000BeatDownBBTeddyBear.eot');
+  src: url('/fonts/000BeatDownBBTeddyBear.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/000BeatDownBBTeddyBear.woff2') format('woff2'),
+      url('/fonts/000BeatDownBBTeddyBear.woff') format('woff'),
+      url('/fonts/000BeatDownBBTeddyBear.ttf') format('truetype'),
+      url('/fonts/000BeatDownBBTeddyBear.svg#000BeatDownBBTeddyBear') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UTM Bebas';
+  src: url('/fonts/UTMBebas.eot');
+  src: url('/fonts/UTMBebas.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/UTMBebas.woff2') format('woff2'),
+      url('/fonts/UTMBebas.woff') format('woff'),
+      url('/fonts/UTMBebas.ttf') format('truetype'),
+      url('/fonts/UTMBebas.svg#UTMBebas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/// mq() - media query manager
+/// @see vendor/mq
+/// @link https://github.com/sass-mq/sass-mq
+$mq-breakpoints: $breakpoints;
+$mq-base-font-size: 16px;
+$mq-show-breakpoints: ();
+
+$windowWidth: 1920;
+$windowHeight: 1080;
+
+$cdnUrl: '';
+
+/// Fonts
+/// @TODO: choose color variable naming convention
+$roboto-c: 'Roboto Condensed', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$bb: 'BeatDownBB', sans-serif;
+$bebas: 'UTM Bebas', sans-serif;
+
+$font-size: 1.6rem;
+$font-primary:    $roboto;
+$font-heading: 'BeatDownBB', sans-serif;
+
+$golden: #cdbe91;
+$golden-light: #f0e6d2;
+
+/// Colors
+$blue:  #285366;
+$blue-dark: #6396b1;
+$blue-light: #6f8eab;
+$green: #16efb5;
+$orange: #ff7922;
+$red: #ff4013;
+$pink: #e70b51;
+$yellow: #fff000;
+$purple: #1c213f;
+
+$white:         #fff;
+$gray-light:    #e5e5e5;
+$gray:          #7e7e7e;
+$gray-dark:     #333;
+$black:         #000;
+$smoke: #7f868a;
+
+$color-default: $golden; //default text color
+
+$color-primary:       $golden;
+$color-primary-light: $golden-light;
+$color-primary-dark:  $golden;
+
+$color-secondary:       $green;
+$color-secondary-light: lighten($green, 10%);
+$color-secondary-dark:  darken($green, 10%);
+
+$color-success: green;
+$color-warning: orange;
+$color-alert:   red;
+
+
+/// Form
+$form-height:   40px;
+
+
+/// Dimensions - Widths and heights
+$height-header: 100px;  //example!
+$height-footer: 100px;  //example!

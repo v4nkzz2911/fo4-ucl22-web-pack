@@ -1,0 +1,22 @@
+/// Typography
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-red {
+  color: $red !important;
+}
+.text-green {
+  color: $green !important;
+}
+.text-orange {
+  color: $orange !important;
+}
+.text-large {
+  font-size: tovw(42);
+  font-family: $font-heading;
+}
+.text-huge {
+  font-size: 1.5vw !important;
+  font-family: $font-heading;
+}

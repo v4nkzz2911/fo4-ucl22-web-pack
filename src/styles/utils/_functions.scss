@@ -1,0 +1,8 @@
+/// Functions
+@function tovh($size, $wh: $windowHeight) {
+  @return #{$size * 100 / $wh}vh
+}
+
+@function tovw($size, $ww: $windowWidth) {
+  @return #{$size * 100 / $ww}vw
+}
